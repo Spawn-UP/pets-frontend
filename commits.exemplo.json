@@ -1,0 +1,9 @@
+{
+  "chore": "deploy, atualização de build, relacionados",
+  "refact": "mudança no codigo já existente que nao afeta o build",
+  "feat": "nova feature para o codigo",
+  "fix": "correçao de problemas em produção",
+
+  "exemplo": "mensagem de commit (chore, refact, feat, fix): titulo da task sem acentuação",
+  "comoFica": "refact: criacao-do-repositorio-front-end"
+}
