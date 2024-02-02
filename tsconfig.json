@@ -19,7 +19,8 @@
     ],
     "paths": {
       "hooks": ["./src/hooks"],
-      "views": ["./src/views"]
+      "views": ["./src/views"],
+      "components": ["./src/components"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
