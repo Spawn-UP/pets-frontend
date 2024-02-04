@@ -5,16 +5,23 @@ interface IAuthUser {
   email: string;
 }
 
+interface ISaveAuth {
+  user?: IAuthUser;
+  acessToken?: string;
+}
+
 interface IAuthUserState {
   authUser: IAuthUser | {};
   acessToken: string;
-  tryChangeAuthUser: (user: IAuthUser) => void;
-  tryChangeAcessToken: (acessToken: string) => void;
+  saveAuth: ({ user, acessToken }: ISaveAuth) => void;
 }
 
 export const useAuthState = create<IAuthUserState>()(set => ({
   authUser: {},
   acessToken: '',
-  tryChangeAuthUser: authUser => set({ authUser }),
-  tryChangeAcessToken: acessToken => set({ acessToken }),
+  saveAuth: ({ user, acessToken }) =>
+    set(state => ({
+      authUser: user || state.authUser,
+      acessToken: acessToken || state.acessToken,
+    })),
 }));

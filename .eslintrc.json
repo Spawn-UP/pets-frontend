@@ -62,7 +62,8 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/no-danger": "off",
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "no-console": "error"
   },
   "settings": {
     "import/resolver": {

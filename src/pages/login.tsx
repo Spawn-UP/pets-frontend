@@ -1,3 +1,5 @@
+'use client';
+
 const Login = () => (
   <>
     <h1>Login</h1>

@@ -2,8 +2,10 @@
 
 const nextConfig = {
   output: 'export',
-  distDir: 'build',
-  basePath: '/pets-frontend',
+
+  // comentar os dois abaixo para rodar localmemente, não esquecer de descomentar para subir o build
+  // distDir: 'build',
+  // basePath: '/pets-frontend',
 };
 
 export default nextConfig;
